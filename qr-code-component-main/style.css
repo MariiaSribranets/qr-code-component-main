@@ -1,15 +1,16 @@
 
 body{
     background-color: #d5e1ef;
-    display: grid;
-    place-items: center;
     height: 100vh;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 main{
-    
-    width: 350px;
+    max-width: 350px;
     height: 500px;
     background-color: white;
     border-radius: 15px;
@@ -17,23 +18,28 @@ main{
 }
 
 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 350px;
-    width: 300px;
-    /* height: auto; */
+    display: block; 
+    margin: 15px auto; 
+    width: 320px;
+    max-width: 100%;
     border-radius: 15px;
-    /* margin: auto; */
 }
 
 p{
     font-family: Outfit, sans-serif;
+    font-size: 15px;
+    margin: 25px;
     text-align: center;
     color: hsl(220, 15%, 55%);
 }
 
 span{
+    font-size: large;
+    font-size: 20px;
     color: hsl(218, 44%, 22%);
     font-weight: 700;
+}
+
+.attribution{
+    flex-basis: 100%;
 }
